@@ -25,11 +25,14 @@ require_once("config.php");
 //$aluno->insert();
 
 //Update no usuário
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor", "professor");
+//echo $usuario;
+
 $usuario = new Usuario();
-
-$usuario->loadById(8);
-
-$usuario->update("professor", "professor");
+$usuario->loadById(13);
+$usuario->delete();
 
 echo $usuario;
 
